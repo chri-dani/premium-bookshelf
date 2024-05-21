@@ -1,0 +1,46 @@
+.contact-page {
+    background-color: #2b2c31;
+    margin:0;
+    padding:10%;
+    color:white;
+}
+
+.contact-page ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-start;
+    border: 8px dotted grey;
+    max-width: 50rem;
+    margin:auto;
+}
+
+.contact-page li {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $l-size;
+    margin-left: $s-size;
+}
+
+.contact-page h1 {
+    margin:0;
+    padding: $xl-size;
+}
+
+
+.contact-page h2 {
+    margin-right: $xl-size;
+}
+
+.contact-page p {
+    font-size: 2.4rem;
+}
+
+.contact-page img {
+    transition-duration: 1s;
+}
+
+.contact-page img:hover {
+    transform: scale(80%);
+}

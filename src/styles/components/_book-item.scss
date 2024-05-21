@@ -1,0 +1,39 @@
+.book-banner {
+    position:relative;
+    margin: $m-size $xl-size;
+    padding-top: $m-size;
+    overflow:hidden;
+    
+}
+
+.book-banner img {
+    display:block;
+    transition: all 0.5s;
+    border-radius: 5%;
+}
+
+.book-banner:hover img{
+    transform: scale(1.05);
+    border-radius: 15%;
+}
+
+.imgCaption {
+    max-width: $img-size;
+    text-wrap: wrap;
+    text-align: center;
+    color: $white;
+    font-size: $m-size;
+    height: auto;
+}
+
+.bookItem__image {
+    max-width: $img-size;
+    height: auto;
+    border: 1px solid black;
+
+}
+
+.bookLink {
+    text-decoration: none;
+    
+}

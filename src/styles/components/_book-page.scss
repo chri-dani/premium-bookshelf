@@ -1,0 +1,101 @@
+.a-text-bold {
+    font-weight: bold;
+}
+
+.bookPage {
+    background-color: darken($almost-white, 10%);
+}
+
+.bookPage__title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $l-size;
+    border-bottom: 1px solid black;
+    color: $off-black;
+    margin:auto;
+    padding: $xl-size;
+    justify-content: space-around;
+    max-width: 50%;
+}
+
+.bookPage__a {
+    padding: $m-size;
+    margin:  $xl-size;
+	background:linear-gradient(to bottom, #7c9b81 5%, #3a58b9 100%);
+	border-radius:3px;
+	border:1px solid #3a58b9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:$xl-size;
+	padding:6px 24px;
+	text-decoration:none;
+    transition-duration: 1s;
+}
+
+.bookPage__a:hover {
+    border-radius: 15%;
+
+}
+.bookPage__a:active {
+	position:relative;
+	top:1px;
+}
+
+.bookPage__buyBox{
+    padding: 0;
+}
+
+.bookPage__container {
+    display: flex;
+    padding: $m-size;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bookPage__description {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    max-width: 100rem;
+    line-height: 1.5;
+    font-size:$m-size;
+    margin-right: $xl-size;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookPage__image {
+    max-width: 70rem;
+    margin: 0 $xl-size;
+    padding:  0;
+    max-height: 50rem;
+    transition-duration: 3s;
+    border-radius: 15%;
+}
+
+.bookPage__image:hover {
+    transform: scale(1.05);
+}
+
+.bookPage__ul {
+    background-color: $almost-white;
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    justify-content: center;
+}
+
+.bookPage__li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $s-size;
+    margin: $m-size $m-size $m-size 0;
+    border: 1px solid lighten($light-blue, 10%);
+}
+
+.bookPage__mini_icon {
+    max-width: 5rem;
+    margin-top: $s-size;
+}
+

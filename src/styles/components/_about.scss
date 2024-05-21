@@ -1,0 +1,18 @@
+.about-me {
+	background-color: #2b2c31;
+}
+
+.about-me-text{
+	width: 80rem;
+	margin: auto;
+	padding-bottom: 20rem;
+	color:white;
+}
+
+.about-me-text > h1 {
+	padding-top:$xl-size;
+}
+
+.about-me-text > p {
+	line-height: 180%;
+}

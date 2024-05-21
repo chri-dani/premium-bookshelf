@@ -1,0 +1,33 @@
+.social-media h3 {    
+    font-size: 3rem;
+    background-image: linear-gradient(to right , #ffffff, #0044ff);
+     color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social-media {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-media ul {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.social-media img {
+    border: 1px solid white;
+    transition-duration: 1s;
+}
+
+.social-media img:hover {
+    transform: scale(80%);
+}
