@@ -33,3 +33,15 @@
     background: #2b752b;
 
   }
+
+@media(max-width: $mobile-version) {
+    .not-found-page{
+        padding:0;
+    }
+
+    .not-found-page > p {
+
+        text-align:left;
+        font-size: $m-size;
+    }
+}

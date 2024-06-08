@@ -1,8 +1,8 @@
 .contact-page {
     background-color: #2b2c31;
-    margin:0;
-    padding:10%;
-    color:white;
+    margin: 0;
+    padding: 10%;
+    color: white;
 }
 
 .contact-page ul {
@@ -12,11 +12,11 @@
     align-items: flex-start;
     border: 8px dotted grey;
     max-width: 50rem;
-    margin:auto;
+    margin: auto;
 }
 
 .contact-page li {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: $l-size;
@@ -24,10 +24,9 @@
 }
 
 .contact-page h1 {
-    margin:0;
+    margin: 0;
     padding: $xl-size;
 }
-
 
 .contact-page h2 {
     margin-right: $xl-size;
@@ -43,4 +42,31 @@
 
 .contact-page img:hover {
     transform: scale(80%);
+}
+
+@media(max-width: $mobile-version) {
+    .contact-page {
+        padding: 0%;
+    }
+    .contact-page ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: flex-start;
+        margin:0;
+        padding:0;
+        border:none;
+        max-width: none;
+    }
+    .contact-page li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: auto;
+        
+    }
+    .contact-page p {
+        font-size: $m-size;
+    }
+    
 }

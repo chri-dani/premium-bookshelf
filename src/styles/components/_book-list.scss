@@ -198,3 +198,10 @@
 		transform: translate(20vw,-180vh) rotate(720deg);
 	}
 }
+
+
+@media(max-width: $mobile-version) {
+	.book-list__side-title{
+		display:none;
+	}
+}

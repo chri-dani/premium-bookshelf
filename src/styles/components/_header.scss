@@ -1,69 +1,76 @@
 .header {
     background-color: black;
     cursor: default
-    
 }
-.header h1{
-  background-image: linear-gradient(to right , #ffffff, #0044ff, #ffffff, #0044ff);
-  color:transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: appear 1s linear forwards alternate;
-  font-size: 7rem;
-  padding: $m-size;
+
+.header h1 {
+    background-image: linear-gradient(to right, #ffffff, #0044ff, #ffffff, #0044ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: appear 1s linear forwards alternate;
+    font-size: 7rem;
+    padding: $m-size;
 }
 
 @keyframes appear {
-  0%{
-    transform: scale(0) 
-  }
-  100%{
-    transform: scale(1)
-  }
+    0% {
+        transform: scale(0)
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 .header__container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     overflow: visible;
 }
 
-
-
-.header ul{
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #000000;
-    display:flex;
-    justify-content:center;
-    width:100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     border-top: 1px solid white;
 }
 
-.header li{
-    float: left;
+.header li {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    
 }
 
-.header li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 2rem;
-  transition-duration: 0.5s;
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    transition-duration: 0.5s;
 }
 
 .header li a:hover {
     background-color: #0044ff;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+@media(max-width: $mobile-version) {
+  .header__container{
+    justify-content: left;
   }
 
-  .active {
-    background-color: #04AA6D;
-  }
+  .header li {
+    border-right: none;
+    border-left: none;
+}
+}

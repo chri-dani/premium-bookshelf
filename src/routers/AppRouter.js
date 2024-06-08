@@ -14,11 +14,11 @@ const AppRouter = () => (
         <div>
             <Header />
                     <Switch> 
-                        <Route path="/" component={BookshelfApp} exact={true} />
+                        <Route path="/" component={BookshelfApp} exact={"true"} />
                         <Route path="/book/:id" component={BookPage} />
-                        <Route path="/about" exact={true} component={About} />
-                        <Route path="/contact" exact={true} component={Contact} />
-                        <Route component={NotFoundPage} />
+                        <Route path="/about" exact={"true"} component={About} />
+                        <Route path="/contact" exact={"true"} component={Contact} />
+                        <Route path="*" component={NotFoundPage} />
                     </Switch>
             <Footer />
         </div>

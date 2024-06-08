@@ -16,3 +16,9 @@
 .about-me-text > p {
 	line-height: 180%;
 }
+
+@media(max-width: $mobile-version) {
+    .about-me-text{
+		max-width: 30rem;
+	}
+}

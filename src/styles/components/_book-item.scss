@@ -37,3 +37,13 @@
     text-decoration: none;
     
 }
+
+@media(max-width: $mobile-version) {
+    
+.bookItem__image {
+    max-width: $img-size;
+    height: auto;
+    border: 1px solid black;
+
+}
+}

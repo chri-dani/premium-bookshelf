@@ -51,3 +51,11 @@
 .footer-pages a:hover {
     color: #0044ff;
 }
+
+@media(max-width: $mobile-version) {
+    .footer{
+        justify-content: left;
+        padding-left:8%;
+    }
+
+}
